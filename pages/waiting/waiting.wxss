@@ -1,0 +1,17 @@
+
+/* .hot-box{ display: block; height: 100%; font-family: Helvetica, Arial, "Hiragino Sans GB", "Source Han Sans CN", "PingFang SC", Roboto, "微软雅黑", "Heiti SC", "Microsoft Yahei", sans-serif }
+.hot-box-main{ display: block; overflow: hidden; margin-bottom: 20px; background: #FFF; }
+/* 日报 */
+/* .themes-box{ display: block; }
+.themes-box-top{ text-align: center; padding-bottom: 16px; padding-top: 16px; background: #F9F9F9; }
+.themes-box-title{ font-size: 16px; font-weight: 500; display: block; }
+.themes-box-subtitle{ font-size: 12px; color: #666; display: block; margin-top: 4px; }  */
+
+/* 日报列表 */
+.themes-list{ background: #FFF; display: block; margin-bottom: 20px; }
+.themes-list-box{ display: block; position: relative; padding: 16px 20px; border-bottom: 1px solid #F2F2F2; }
+.themes-list-thumbnail{ position: absolute; left: 20px; top: 16px; height: 40px; width: 40px; }
+.themes-list-img{ width: 40px; height: 40px; border-radius: 4px; border: 1px solid #F2F2F2;}
+.themes-list-main{ margin-left: 50px; }
+.themes-list-name{ font-size: 14px; color: #444; height: 20px; line-height: 20px; overflow: hidden; }
+.themes-list-description{ font-size: 12px; color: #999; height: 20px; line-height: 20px; overflow: hidden; }

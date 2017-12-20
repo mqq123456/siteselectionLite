@@ -1,0 +1,6 @@
+
+.done-btn {
+  position: fixed;
+  bottom: 10rpx;
+  width: 100%;
+}

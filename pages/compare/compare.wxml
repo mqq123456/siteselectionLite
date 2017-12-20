@@ -1,0 +1,10 @@
+<view class="swiper-item">
+   <view class="themes-list-box" wx:for="{{datalist}}">
+    <view class="themes-list-main">
+        <view class="themes-list-name">{{item.name}}</view>
+        <view class="progress-box">
+        <progress percent="{{item.value}}" show-info stroke-width="30"/>
+        </view>
+    </view>
+  </view> 
+</view> 

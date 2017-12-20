@@ -1,0 +1,12 @@
+.themes-list{ background: #FFF; display: block; margin-bottom: 0px; }
+.themes-list-box{ display: block; position: relative; padding: 2px; border-bottom: 1px solid #F2F2F2; }
+.themes-list-main{ margin-left: 10px; }
+.themes-list-name{ font-size: 14px; color: #444; height: 20px; line-height: 20px; overflow: hidden; }
+
+progress{
+  width: 100%;
+}
+.progress-box{
+  display: flex;
+  height: 30px;
+}

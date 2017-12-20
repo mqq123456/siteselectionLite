@@ -1,0 +1,54 @@
+<view class="scroll-view-back">
+<scroll-view class="scroll-view" scroll-x style="width: 100%">
+  <view id="demo1" class="{{selected==1?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{1}}">精选</view>
+  <view id="demo2"  class="{{selected==2?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{2}}">热卖</view>
+  <view id="demo3"  class="{{selected==3?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{3}}">美食</view>
+  <view id="demo4" class="{{selected==4?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{4}}">川菜</view>
+  <view id="demo5" class="{{selected==5?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{5}}">主食</view>
+  <view id="demo6"  class="{{selected==6?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{6}}">糕点</view>
+  <view id="demo7" class="{{selected==7?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{7}}">汤类</view>
+  <view id="demo8" class="{{selected==8?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{8}}">盖饭</view>
+  <view id="demo9" class="{{selected==9?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{9}}">小炒</view>
+  <view id="demo10" class="{{selected==10?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{10}}">热饮</view>
+  <view id="demo11" class="{{selected==11?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{11}}">饮料</view>
+  <view id="demo12"  class="{{selected==12?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{12}}">酒水</view>
+  <view id="demo13"  class="{{selected==13?'scroll-view-item-selected':'scroll-view-item-normal'}}" bindtap="itemselected{{13}}">其它</view>
+</scroll-view>
+</view>
+
+<view>
+<scroll-view scroll-y="true" style="height:100%">
+    <block wx:for-items="{{menu}}" wx:for-index="idx" wx:for-item="item">
+      <view wx:if="{{idx%2==0}}">
+        <view class="menu-item">
+          <view class="menu-image">
+            <image src="{{item.image}}"></image>
+          </view>
+          <view class="menu-info">
+            <text class="name">{{item.name}}</text>  
+            <text class="price">{{item.price}}</text>
+            <text class="desc">{{item.desc}}</text>
+            <view class="jiahao">
+                  <view class="hengxian"></view>
+            </view>  
+          </view> 
+        </view>
+      </view>
+       <view wx:if="{{idx%2!=0}}">
+        <view class="menu-item">
+          <view class="menu-info">
+            <text class="name">{{item.name}}</text>  
+            <text class="price">{{item.price}}</text>
+            <text class="desc">{{item.desc}}</text>
+            <view class="jiahao">
+                  <view class="hengxian"></view>
+            </view>  
+          </view> 
+          <view class="menu-image">
+            <image src="{{item.image}}"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+</scroll-view>
+</view>

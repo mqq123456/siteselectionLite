@@ -1,0 +1,14 @@
+<!-- loading -->
+<loading hidden="{{hidden}}">
+    加载中...
+</loading>
+
+<!-- 日报列表 -->
+<view class="themes-list">
+  <view class="themes-list-box" wx:for="{{datalist}}">
+    <view class="themes-list-main">
+        <view class="themes-list-name">{{item.name}}</view>
+        <view class="themes-list-description">{{item.address}}</view>
+    </view>
+  </view>
+</view>

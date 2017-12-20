@@ -1,0 +1,18 @@
+
+<scroll-view class="hot-box" scroll-y="true" upper-threshold="50" 
+                    lower-threshold="100" bindscrolltolower="scrolltolower">
+            <!-- 日报列表 -->
+    <view class="themes-list">
+        <view class="themes-list-box" wx:for="{{datalist}}">
+            <navigator url="../themes/themes?id={{item.id}}">
+                <view class="themes-list-thumbnail">
+                    <image class="themes-list-img" src="http://qcloud.dpfile.com/pc/mSQZGQuJjmaLpbncR0KBX8T2YPABLJxwpdLUMDCXsxpGEzAPPptLTCRa2KhFCT1UF5u7J_jS4MuCaeLAHD0KTg.jpg" />
+                </view>
+                <view class="themes-list-main">
+                    <view class="themes-list-name">{{item.name}}</view>
+                    <view class="themes-list-description">{{item.address}}</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+  </scroll-view>

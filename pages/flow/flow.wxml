@@ -1,0 +1,14 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">天流量</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">小时流量</view>
+</view>
+<view class="swiper-item">
+   <view class="themes-list-box" wx:for="{{datalist}}">
+    <view class="themes-list-main">
+        <view class="themes-list-name">{{item.name}}人流量{{item.value/1000}}万人</view>
+        <view class="progress-box">
+        <progress percent="{{item.value/100}}" stroke-width="30"/>
+        </view>
+    </view>
+  </view> 
+</view> 

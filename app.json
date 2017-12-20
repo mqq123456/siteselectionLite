@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/compare/compare",
+    "pages/flow/flow",
+    "pages/house/house",
+    "pages/office/office",
+    "pages/people/people",
+    "pages/restaurant/restaurant",
+    "pages/menus/menus",
+    "pages/selected/selected",
+    "pages/waiting/waiting"
+  ],
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#268dcd",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "pages/menus/menus",
+        "iconPath": "image/menu.png",
+        "selectedIconPath": "image/menu-selected.png",
+        "text": "菜单"
+      },
+      {
+        "pagePath": "pages/selected/selected",
+        "iconPath": "image/income.png",
+        "selectedIconPath": "image/income-selected.png",
+        "text": "已选菜"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
